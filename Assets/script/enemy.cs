@@ -20,11 +20,16 @@ public class enemy : MonoBehaviour
         
 
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("rangeattack"))
+            health -= 1; 
+    }
     private void Update()
     {
         if (health == 0)
             Destroy(gameObject);
-        Debug.Log (health);
+
     }
 
 }

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - attack
+  - rangeattack
   layers:
   - Default
   - TransparentFX
