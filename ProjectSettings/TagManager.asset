@@ -6,6 +6,7 @@ TagManager:
   tags:
   - attack
   - rangeattack
+  - player
   layers:
   - Default
   - TransparentFX

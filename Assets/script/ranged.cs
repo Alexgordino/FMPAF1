@@ -10,7 +10,7 @@ public class ranged : MonoBehaviour
     public GameObject Projectile ;
     public Transform PlayerTransform;
     public Rigidbody2D rb;
-    public Vector2 mouse;
+    public Vector3 mouse;
     public Vector2 range1;
     public float time;
     public bool cool = false;
@@ -38,7 +38,7 @@ public class ranged : MonoBehaviour
                 GameObject bullet = Instantiate(Projectile, PlayerTransform.position, PlayerTransform.rotation);
                 //GameObject bullet = Instantiate(Projectile, new Vector3(0f, 0f, 0f), PlayerTransform.rotation);
 
-                bullet.GetComponent<TravelTowards>().targetPosition = mouse;
+                bullet.GetComponent<PlayerShoot>().targetPosition.position = mouse;
                 cool = true;
                
                 
