@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class combat : MonoBehaviour
 {
-    public float timer = 0.5f;
+    public float timer = 3f;
     public bool running = false;
     public Transform attack;
     public GameObject cube;
@@ -11,11 +11,23 @@ public class combat : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     // Update is called once per frame
+    
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        timer -= Time.deltaTime;
+        if (timer >= 0)
         {
-            Instantiate(cube, attack.position, attack.rotation);
+        running = false;
+        }
+            
+        if (running == false)
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                Instantiate(cube, attack.position, attack.rotation);
+                timer = 3f;
+                running = true;
+            }
 
         }
     }
