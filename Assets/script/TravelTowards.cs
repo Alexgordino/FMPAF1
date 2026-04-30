@@ -13,6 +13,10 @@ public class TravelTowards : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(gameObject.transform.position, targetPosition, speed * Time.deltaTime);
         
+        if (new Vector2(transform.position.x, transform.position.y) == targetPosition)
+        {
+            Destroy(gameObject);
+        }
     }
 }
 

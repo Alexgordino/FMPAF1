@@ -7,16 +7,17 @@ TagManager:
   - attack
   - rangeattack
   - player
+  - -1h
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - bullet
   - Water
   - UI
-  - 
-  - 
-  - 
+  - player
+  - enemy
+  - enemybullet
   - 
   - 
   - 

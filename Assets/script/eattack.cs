@@ -31,9 +31,14 @@ public class eattack : MonoBehaviour
                 GameObject bullets = Instantiate(attack, enemy.position, enemy.rotation);
                 transform.position = Vector2.MoveTowards(gameObject.transform.position, playa.position, speed * Time.deltaTime);
 
-                bullets.GetComponent<TravelTowards>().targetPosition = playa.position;
+            bullets.GetComponent<TravelTowards>().targetPosition = playa.position;
+            
+                
                 cool = true;
-
+                
+                
+                     
+                
             }
             if (cool == true)
             {

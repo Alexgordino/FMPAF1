@@ -17,6 +17,7 @@ public class ranged : MonoBehaviour
     public float timer = 1f;
 
 
+
     // Update is called once per frame
     void Update()
     {
@@ -46,4 +47,5 @@ public class ranged : MonoBehaviour
         }
 
     }
+
 }
