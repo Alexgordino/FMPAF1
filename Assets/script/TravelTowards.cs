@@ -16,6 +16,7 @@ public class TravelTowards : MonoBehaviour
         if (new Vector2(transform.position.x, transform.position.y) == targetPosition)
         {
             Destroy(gameObject);
+           
         }
     }
 }
